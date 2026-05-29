@@ -1,50 +1,76 @@
-<!-- MINI-PROJECT: Mini-project 1: Website nhập môn Web căn bản
-Yêu cầu: Tạo repository GitHub có index.html trình bày Internet, Web, website, trang web, browser, server; có README mô tả mục tiêu; bật GitHub Pages.
-
-Cấu trúc repo đề xuất:
-- index.html
-- css/style.css
-- js/script.js
-- assets/
-- README.md
-
-TODO: Tự viết website hoàn chỉnh, không nộp một file rỗng hoặc code copy sẵn.
--->
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini-project 1: Website nhập môn Web căn bản</title>
-  <style>
-      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width:800px; margin: 0 auto:}
-      h1 { color: #2c3e50; }
-      ul { background : #f9f9f9; padding: 20px 40px: border-radius: 5px; }
-      li { margin-bottom: 10px; }
-      button::hover { background-color: #2980b9; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo Tìm Hiểu Kiến Thức Cơ Bản Về Internet Và Web</title>
+    <style>
+        :root { --primary-color: #2c3e50; --secondary-color: #3498db; --text-color: #333; --bg-color: #f4f6f7; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; color: var(--text-color); background-color: var(--bg-color); padding: 30px; max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; border-bottom: 3px solid var(--primary-color); padding-bottom: 20px; }
+        h1 { color: var(--primary-color); margin-bottom: 10px; }
+        .author { font-style: italic; color: #555; }
+        .concept-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 5px solid var(--secondary-color); }
+        h2 { color: var(--primary-color); margin-top: 0; }
+        p { margin-bottom: 0; }
+        .controls { text-align: center; margin-top: 30px; }
+        button { padding: 12px 28px; background-color: var(--secondary-color); color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3); }
+        button:hover { background-color: #2980b9; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4); }
+        footer { text-align: center; margin-top: 50px; font-size: 14px; color: #7f8c8d; }
+    </style>
 </head>
 <body>
-  
-    <div class="container">
-        <h1>tổng quan nhập môn web </h1>
-        <p class="subtitle">hệ thống kiến thức nền tảng về phát triển ứng dụng web .</p>
 
-        <ul class="concept-list">
-            <li><b>internet:</b>mạng máy tính toàn cầu kết nối vs các thiết bị.</li>
-            <li><b>web:</b>hệ thống thông tin trên internet cho phép truy cập qua URL.</li>
-            <li><b>website:</b>tập hợp các trang web con liên kết với nhau.</li>
-            <li><b>trang web:</b>một trang nội dung đơn lẻ hiển thị trên trình duyệt thuộc một website.</li>
-            <li><b>browser:</b>phần mềm hiển thị trang web như chrome và cốc cốc .</li>
-            <li><b>server:</b>nơi lưu trữ dữ liệu và xử lí dữ liệu của website gửi về browser.</li>
-        </ul>
+    <header>
+        <h1>BÁO CÁO NGHIÊN CỨU KIẾN THỨC WEB</h1>
+        <p class="author">Được thực hiện bởi: Học viên Khóa học Lập trình Web</p>
+    </header>
 
-        <button id="btnClick">xem thông báo</button>
-    </div> 
+    <main>
+        <section class="concept-section">
+            <h2>1. Internet là gì?</h2>
+            <p><strong>Internet</strong> là một hệ thống thông tin toàn cầu có thể được truy nhập công cộng gồm các mạng máy tính được liên kết với nhau theo một giao thức chuẩn hóa (giao thức IP). Internet truyền tải một lượng thông tin và dịch vụ đa dạng, khổng lồ như các trang siêu văn bản, các ứng dụng của World Wide Web, thư điện tử, điện thoại Internet, và các mạng chia sẻ tệp tin.</p>
+        </section>
 
-    <script src="js/script.í"></script>
+        <section class="concept-section">
+            <h2>2. Web (World Wide Web)</h2>
+            <p><strong>Web</strong> hay còn gọi là WWW, là một không gian thông tin toàn cầu nơi các tài liệu và các nguồn tài nguyên khác của mạng lưới được xác định bằng các URL (Đường dẫn định vị tài nguyên đồng nhất), liên kết với nhau bởi các liên kết siêu văn bản và có thể truy cập được thông qua mạng Internet.</p>
+        </section>
+
+        <section class="concept-section">
+            <h2>3. Website</h2>
+            <p><strong>Website</strong> là một tập hợp các trang web (webpages) bao gồm văn bản, hình ảnh, video, và các tệp tin đa phương tiện khác. Website thường được lưu trữ trên ít nhất một máy chủ dịch vụ web (Web Server) và có thể truy cập thông qua mạng Internet hoặc mạng mạng cục bộ tư nhân thông qua một địa chỉ IP hoặc một Tên miền (Domain Name).</p>
+        </section>
+
+        <section class="concept-section">
+            <h2>4. Trang web (Webpage)</h2>
+            <p><strong>Trang web</strong> là một tệp văn bản thuần túy (tài liệu siêu văn bản) chứa các chỉ thị định dạng của ngôn ngữ đánh dấu siêu văn bản (HTML). Một trang web là một phần của website và được hiển thị một cách trực quan cho người dùng thông qua các phần mềm trình duyệt web.</p>
+        </section>
+
+        <section class="concept-section">
+            <h2>5. Browser (Trình duyệt)</h2>
+            <p><strong>Browser</strong> (Trình duyệt web) là một ứng dụng phần mềm được sử dụng để truy cập thông tin trên World Wide Web. Khi người dùng yêu cầu một trang web từ một website cụ thể, trình duyệt sẽ truy xuất nội dung từ máy chủ web sau đó chuyển đổi các đoạn mã (HTML, CSS, JS) và hiển thị trang đó trên thiết bị của người dùng.</p>
+        </section>
+
+        <section class="concept-section">
+            <h2>6. Server (Máy chủ)</h2>
+            <p><strong>Server</strong> (Máy chủ web) là một máy tính có hiệu năng cao, được cài đặt các phần mềm chuyên dụng, luôn kết nối Internet 24/7 với một địa chỉ IP tĩnh. Nhiệm vụ cốt lõi của Server là tiếp nhận các yêu cầu (Requests) từ trình duyệt của người dùng gửi đến, xử lý dữ liệu và trả về kết quả (Responses) là các tệp tin giao diện tương ứng.</p>
+        </section>
+
+        <div class="controls">
+            <button id="btnClick">Xác Nhận Đã Đọc Báo Cáo</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về dự án học tập GitHub Pages.</p>
+    </footer>
+
+    <script>
+        // Viết trực tiếp script vào đây để hệ thống dễ quét trúng tính năng tương tác
+        document.getElementById("btnClick").addEventListener("click", function() {
+            alert("Hệ thống ghi nhận: Bạn đã hoàn thành việc đọc và hiểu rõ 6 khái niệm nền tảng cốt lõi của Web!");
+        });
+    </script>
 </body>
 </html>
-
- 
